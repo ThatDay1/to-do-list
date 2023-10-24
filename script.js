@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
-    const form = document.querySelector("new-task-form");
-    const input = document.querySelector("new-task-input");
-    const listElement = document.querySelector("#task");
+    const form = document.querySelector("#new-task-form");
+    const input = document.querySelector("#new-task-input");
+    const listElement = document.querySelector("#tasks");
 
     form.addEventListener("submit", e => {
         e.preventDefault();
@@ -50,7 +50,6 @@ window.addEventListener("load", () => {
                 taskInput.focus ();
             }
             else {
-                taskEdit.classList.contanins ("fa-floppy-disk");
                 taskEdit.classList.replace("fa-solid-disk", "fa-pencil");
                 taskInput.setAttribute("readonly", "readonly");
             }
